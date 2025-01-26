@@ -1,0 +1,61 @@
+.navbarHeader .navbar {
+  background-color: var(--primary-color); 
+  box-shadow: none; 
+}
+
+.navbarHeader .navbar-collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.navbarHeader .nav {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  font-weight:500;
+}
+
+.navbarHeader .link.active {
+  background-color: var(--primary-color);
+  color: var(--danger-color);
+  font-weight: bold;
+}
+/* Link Styles */
+.navbarHeader .link,
+.navbarHeader .NavDropdown {
+  color: var(--text-color);
+  text-decoration: none;
+  width: 130px; 
+  height: 50px; 
+  display: inline-flex; 
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  transition: primary-color  0.3s ease;
+  text-align: center; 
+}
+
+.navbarHeader .link:hover,
+.navbarHeader .NavDropdown:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.navbarHeader .NavDropdownItem .link:hover {
+  background-color: transparent; 
+  color: inherit; 
+}
+.navbarHeader .NavDropdown .link:active {
+  color: var(--dark-gray); 
+}
+
+.navbarHeader .active-link {
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.navbarHeader .dropdown-menu {
+  text-align: left; 
+  font-size: 14px; 
+}
