@@ -6,8 +6,9 @@
     --dark-gray:#5a6268;
     --light-gray: #f4f4f4;
     --danger-color: #d54c50;
-    /* --background-color: #f9f9f9; */
-    --text-color: #333;
+    --background-color: #f8fbfd;
+    --text-color: #000;
+    --light-red:#f5c1c3;
   }
   
   * {
@@ -16,9 +17,9 @@
     margin: 0;
   }
   .MainContainer {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
   }
   
   .Link {

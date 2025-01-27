@@ -1,0 +1,45 @@
+.pagination {
+    display: inline-flex;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .pagination .page-item {
+    margin-right: 5px;
+  }
+  
+  .pagination .page-item .page-link {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color); 
+    padding: 3px 10px;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .pagination .page-item .page-link:hover,
+  .pagination .page-item .page-link:focus {
+    background-color: var(--light-red); 
+    border-radius: 7px;
+    outline: none;
+  }
+  
+  /* Disable borders around page numbers */
+  .pagination .page-item.active .page-link {
+    background-color: var(--light-red); 
+    border-radius:7px;
+    border-color: transparent;
+  }
+  
+  .pagination .page-item .page-link[aria-label="Previous"]:hover,
+  .pagination .page-item .page-link[aria-label="Next"]:hover {
+    background-color: #b0b0b0; 
+  }
+  
+  /* Optional: Remove focus outline */
+  .pagination .page-item .page-link:focus {
+    outline: none;
+  }
+  
