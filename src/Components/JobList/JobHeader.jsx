@@ -5,7 +5,7 @@ const JobHeader = ({ totalJobs, startIndex, endIndex, setView }) => {
   const [sortBy, setSortBy] = useState("NewestPost");
 
   return (
-    <div className="d-flex justify-content-between align-items-center mb-3">
+    <div className="d-flex justify-content-between align-items-center mb-4">
       <div className="header-lable">
         Showing
         <span className="bold-num ms-1">

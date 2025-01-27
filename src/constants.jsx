@@ -1,7 +1,7 @@
 import googleImage from "../src/assets/google.webp";
 import netflixImage from "../src/assets/netflix.png";
 
-export const ITEMS_PER_PAGE = 18;
+export const ITEMS_PER_PAGE = 12;
 
 // Job titles
 export const JOB_TITLES = [

@@ -6,7 +6,13 @@ import {
   LOCATIONS,
   ITEMS_PER_PAGE,
 } from "constants";
-import { JobCard, JobHeader, Pagination, FilterForm } from "Components";
+import {
+  JobCard,
+  JobHeader,
+  Pagination,
+  FilterForm,
+  EmailInputForm,
+} from "Components";
 import "./JobList.css";
 
 const JobList = () => {
@@ -23,9 +29,10 @@ const JobList = () => {
   };
 
   return (
-    <div className="job-list-wrapper">
+    <div className="job-list-wrapper ps-5 pt-5">
       <div className="row">
-        <div className="col-3">
+        <div className="col-3 p-4">
+          <EmailInputForm />
           <div className="filter-container">
             <FilterForm
               DUMMY_JOB_DATA={DUMMY_JOB_DATA}

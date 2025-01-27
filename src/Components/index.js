@@ -8,3 +8,4 @@ export { default as Pagination } from "./Pagination/Pagination.jsx";
 export { default as FilterForm } from "./JobList/FilterForm/FilterForm.jsx";
 export { default as CustomCheckbox } from "./CustomCheckbox/CustomCheckbox.jsx";
 export { default as SalaryRangeSlider } from "./JobList/SalaryRangeSlider/SalaryRangeSlider.jsx";
+export { default as EmailInputForm } from "./EmailInputForm/EmailInputForm.jsx";
