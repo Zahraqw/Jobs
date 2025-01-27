@@ -1,9 +1,10 @@
 .card-body {
     padding: 15px;
+    height: 280px;
 
   }
   .grid-view{
-    width: 300px;
+    width: 290px;
   }
   .list-view{
     width: 100%;

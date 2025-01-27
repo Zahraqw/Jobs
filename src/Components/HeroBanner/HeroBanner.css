@@ -1,0 +1,32 @@
+.hero-banner {
+    background-color: var(--light-gray);
+    padding: 60px;
+  }
+  
+  .hero-title {
+    max-width: 500px;
+    font-weight: 700;
+  }
+  
+  .hero-description {
+    font-size:16px;
+    color: var(--dark-gray);
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 15px;
+    border: 1px solid var(--light-gray); 
+    padding-left: 35px; 
+    background-color: var(--primary-color);
+  }
+  .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color:var(--secondary-color);
+    z-index: 1;
+  }
+  

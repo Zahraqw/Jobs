@@ -57,8 +57,8 @@ const JobList = () => {
                 key={job.id}
                 className={`${
                   view === "grid"
-                    ? "col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12 mb-3"
-                    : "col-12 mb-3"
+                    ? "col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12 "
+                    : "col-12 "
                 }`}
               >
                 <JobCard job={job} view={view} />
