@@ -5,3 +5,6 @@ export { default as JobCard } from "./JobCard/JobCard.jsx";
 export { default as CustomBadge } from "./CustomBadge/CustomBadge.jsx";
 export { default as JobHeader } from "./JobList/JobHeader.jsx";
 export { default as Pagination } from "./Pagination/Pagination.jsx";
+export { default as FilterForm } from "./JobList/FilterForm/FilterForm.jsx";
+export { default as CustomCheckbox } from "./CustomCheckbox/CustomCheckbox.jsx";
+export { default as SalaryRangeSlider } from "./JobList/SalaryRangeSlider/SalaryRangeSlider.jsx";

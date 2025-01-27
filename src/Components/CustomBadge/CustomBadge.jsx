@@ -9,13 +9,13 @@ const CustomBadge = ({
 }) => {
   return (
     <span
-      className={`py-1 px-1 ${className}`}
+      className={`py-1 px-2 ${className}`}
       style={{
         backgroundColor: color,
         color: "#5a6268",
         fontSize: "12px",
         display: "inline-block",
-        borderRadius: "5px",
+        borderRadius: "10px",
       }}
       {...props}
     >

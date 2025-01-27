@@ -1,0 +1,82 @@
+.salary-range-slider {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .slider-container {
+    position: relative;
+    height: 20px;
+  }
+  
+  .track {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: var(--primary-color); 
+    border: 1px solid var(--danger-color);
+    border-radius: 5px;
+  }
+  
+  .range {
+    position: absolute;
+    height: 10px;
+    background: var(--danger-color);
+    z-index: 2; 
+  }
+  
+  .slider {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    z-index: 3; 
+  }
+  
+  .slider::-webkit-slider-runnable-track {
+    height: 10px;
+    background: transparent;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    border: 2px solid var(--danger-color);
+    position: relative;
+    top: -5px; 
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-track {
+    height: 5px;
+    background: transparent;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid red;
+    position: relative;
+    top: -5px;
+    cursor: pointer;
+  }
+  
+  .salary-values {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .salary-wrapper{
+    background-color: var(--light-gray);
+    border-radius: 6px;
+    padding: 20px;
+    min-width: 100px;;
+  }

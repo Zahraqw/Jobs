@@ -1,17 +1,22 @@
 import React, { useState } from "react";
-import dummyJobData from "dummyData";
-import { JobCard, JobHeader, Pagination } from "Components";
+import {
+  DUMMY_JOB_DATA,
+  FILTER_OPTIONS,
+  CATEGORIES,
+  LOCATIONS,
+  ITEMS_PER_PAGE,
+} from "constants";
+import { JobCard, JobHeader, Pagination, FilterForm } from "Components";
 import "./JobList.css";
 
 const JobList = () => {
-  const totalJobs = dummyJobData.length;
+  const totalJobs = DUMMY_JOB_DATA.length;
   const [view, setView] = useState("grid");
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 20; // Number of items per page (adjust as needed)
 
-  const indexOfLastJob = currentPage * itemsPerPage;
-  const indexOfFirstJob = indexOfLastJob - itemsPerPage;
-  const currentJobs = dummyJobData.slice(indexOfFirstJob, indexOfLastJob);
+  const indexOfLastJob = currentPage * ITEMS_PER_PAGE;
+  const indexOfFirstJob = indexOfLastJob - ITEMS_PER_PAGE;
+  const currentJobs = DUMMY_JOB_DATA.slice(indexOfFirstJob, indexOfLastJob);
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -20,11 +25,14 @@ const JobList = () => {
   return (
     <div className="job-list-wrapper">
       <div className="row">
-        {/* Filter Section - takes 4 columns */}
         <div className="col-3">
           <div className="filter-container">
-            <div>Filters</div>
-            {/* Add filter elements here */}
+            <FilterForm
+              DUMMY_JOB_DATA={DUMMY_JOB_DATA}
+              FILTER_OPTIONS={FILTER_OPTIONS}
+              CATEGORIES={CATEGORIES}
+              LOCATIONS={LOCATIONS}
+            />
           </div>
         </div>
 
@@ -54,7 +62,7 @@ const JobList = () => {
             <Pagination
               currentPage={currentPage}
               totalItems={totalJobs}
-              itemsPerPage={itemsPerPage}
+              itemsPerPage={ITEMS_PER_PAGE}
               onPageChange={handlePageChange}
             />
           </div>
