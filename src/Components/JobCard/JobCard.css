@@ -1,0 +1,74 @@
+.card-body {
+    padding: 15px;
+
+  }
+  .grid-view{
+    width: 300px;
+  }
+  .list-view{
+    width: 100%;
+  }
+  .card-title {
+    font-size: 14px !important;
+    color: var(--dark-gray) !important;
+    font-weight: 400 !important;
+  }
+  .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+
+ .description{
+  font-size: 18px;
+  color: var(--text-color);
+  height: 70px;
+  overflow: hidden;
+ }
+
+  .image-wrapper{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .time-location{
+    color: var(--dark-gray);
+    font-size: 14px;
+  }
+  
+  .icons-card{
+    color:  var(--secondary-color);
+  }
+  .salary{
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .perMonth{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-color);
+  }
+  .footer-icons{
+    background-color: transparent !important;
+    color: var(--secondary-color) !important;
+    border: none !important;
+    font-weight: 400 !important;
+  }
+
+  /* Styling for the list view */
+.list-view .col-12 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-view .col-12 .job-card {
+  margin-left: 10px;
+}

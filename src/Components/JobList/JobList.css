@@ -1,0 +1,27 @@
+.job-list-wrapper{
+    background-color: var(--background-color);
+}
+
+/* Custom styles for the select dropdown */
+.custom-select {
+    border: none; 
+    border-radius: 0; 
+    box-shadow: none; 
+  }
+.custom-select:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .grid-list{
+    color: var(--secondary-color);
+  }
+  .header-lable{
+    color: var(--dark-gray);
+    font-size: 14px;
+  }
+  .bold-num{
+    color: var(--text-color);
+    font-weight: 600;
+  }

@@ -11,7 +11,7 @@ const NavbarHeader = () => {
   };
 
   return (
-    <Container className="MainContainer">
+    <div className="MainContainer">
       <div className="navbarHeader">
         <Navbar expand="xl">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -29,16 +29,16 @@ const NavbarHeader = () => {
                 id="basic-nav-dropdown"
                 activeclassname="active-link"
               >
-                <div className="NavDropdownItem">
+                <NavDropdown.Item>
                   <NavLink
                     className="link"
-                    to="/fullTime"
+                    to="/jobs"
                     activeclassname="active-link"
                   >
-                    Full time
+                    Jobs
                   </NavLink>
-                </div>
-                <div className="NavDropdownItem">
+                </NavDropdown.Item>
+                <NavDropdown.Item>
                   <NavLink
                     className="link"
                     to="/partTime"
@@ -46,7 +46,7 @@ const NavbarHeader = () => {
                   >
                     Part time
                   </NavLink>
-                </div>
+                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown
                 className="link"
@@ -76,7 +76,7 @@ const NavbarHeader = () => {
           </Navbar.Collapse>
         </Navbar>
       </div>
-    </Container>
+    </div>
   );
 };
 
